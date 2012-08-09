@@ -1,4 +1,4 @@
-jquery-mobile-router-lite
+jquery-mobile-routerlite
 =========================
 A lightweight and simple router for jQuery Mobile.
 

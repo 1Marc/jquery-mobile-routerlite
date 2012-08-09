@@ -39,7 +39,7 @@ API Methods
 * **pagechange** - fires each time the page is visited
   ```javascript
   // every time we visit the page with id="checkout" then run this code
-  $.mobile.routerlite.pageinit("#checkout", function(page){
+  $.mobile.routerlite.pagechange("#checkout", function(page){
       doSomething();
   });
   ```

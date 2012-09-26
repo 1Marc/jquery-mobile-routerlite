@@ -23,7 +23,12 @@ $.mobile.routerlite = {
     _initroutes: [],
     _changeroutes: [],
     _getPath: function() {
-        return window.location.pathname;
+
+        var path = ($.mobile.urlHistory.getActive() && $.mobile.urlHistory.getActive().pageUrl) ?
+			$.mobile.urlHistory.getActive().pageUrl: 
+			window.location.pathname;
+		
+        return path;
     },
     _trigger: function(callback, uiPage) {
         callback(uiPage, this._getPath());
